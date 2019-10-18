@@ -22,28 +22,14 @@ public class DuongTrangTri extends TrangTriCafe {
 		return this.cafe.Gia() + 5;
 	}
 	
-	public DuongTrangTri (Cafe cafe) throws Exception {
-		Cafe x = cafe;
-		boolean daCoDuong3Lan = false;
-		
-		String s = x.getMoTa();
-		String sub = "Duong";
-		String temp = s.replace(sub, "");
-		int occ = (s.length() - temp.length()) / sub.length();
-		if(occ>2)
-			daCoDuong3Lan = true;
-		
-		while (true) {
-			if (x instanceof TrangTriCafe) {
-				x = ((TrangTriCafe) x).cafe;
-			}
-			else
-				break;
-		}
-		
-		if (daCoDuong3Lan) 
-			throw new Exception("Không được thêm duong qua 3 lần");			
-		else 
-			this.cafe = cafe;
-	}	
+	public DuongTrangTri (Cafe cafe) {
+		this.cafe = cafe;
+//		boolean daCoDuong3Lan = false;
+//		Cafe cafe2 = cafe;
+//		while (true) {
+//			if (cafe2 instanceof TrangTriCafe) {
+//				cafe2 = ((TrangTriCafe) cafe2).getCafe();
+//			}
+	}
+	
 }

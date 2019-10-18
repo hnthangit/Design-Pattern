@@ -1,9 +1,9 @@
-import java.util.ArrayList;
+
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 		Cafe x = new CafePhin();
 		System.out.println(x.getMoTa() + " " + x.Gia());
 		
@@ -15,7 +15,8 @@ public class Main {
 //		x = new RhumTrangTri(x);
 //		System.out.println(x.getMoTa() + " "  + x.Gia());
 		
-		
+		x = new DuongTrangTri(x);
+		System.out.println(x.getMoTa() + " "  + x.Gia());
 		
 //		Cafe x2 = new CafeRangXay();
 //		System.out.println(x2.getMoTa() + " " + x2.Gia());
@@ -25,56 +26,6 @@ public class Main {
 //			System.out.println("Lỗi khi tạo lớp bề mặt");
 //			e1.printStackTrace();
 //		}
-		try {
-			x = new DuongTrangTri(x);
-			System.out.println(x.getMoTa() + " "  + x.Gia());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		try {
-			x = new DuongTrangTri(x);
-			System.out.println(x.getMoTa() + " "  + x.Gia());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		try {
-			x = new SuaTrangTri(x);
-			System.out.println(x.getMoTa() + " "  + x.Gia());
-
-		} catch (Exception e1) {
-			System.out.println("Lỗi khi tạo lớp bề mặt");
-			e1.printStackTrace();
-		}
-		
-		try {
-			x = new DuongTrangTri(x);
-			System.out.println(x.getMoTa() + " "  + x.Gia());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		
-		try {
-			x = new DuongTrangTri(x);
-			System.out.println(x.getMoTa() + " "  + x.Gia());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-
-		
-
-		
-//		x = new DuongTrangTri(x);
-//		System.out.println(x.getMoTa() + " "  + x.Gia());
-		
 		try {
 			x = new SuaTrangTri(x);
 			System.out.println(x.getMoTa() + " "  + x.Gia());
@@ -113,8 +64,6 @@ public class Main {
 //		}
 //		System.out.println("123");
 		//System.out.println(bmx1.getMoTa() + " "  + x.Gia());
-		
-		
 	}
 
 }
