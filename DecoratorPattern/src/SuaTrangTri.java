@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class SuaTrangTri extends TrangTriCafe{
 
@@ -17,6 +17,7 @@ public class SuaTrangTri extends TrangTriCafe{
 	public SuaTrangTri (Cafe cafe) throws Exception {
 		boolean daTrangTriSua = false;
 		Cafe x = cafe;
+
 		while (true) {
 			if (x instanceof TrangTriCafe) {
 				if (x instanceof SuaTrangTri)
